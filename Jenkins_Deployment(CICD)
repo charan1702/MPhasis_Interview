@@ -17,3 +17,9 @@
 **If a deployment causes production issues, my first priority is to assess impact and restore service. I correlate the issue with the deployment, isolate whether the problem is in the application, Kubernetes, infrastructure, networking, or dependency layer, and if necessary roll back to the last known-good version through the GitOps process. After recovery, I perform RCA and implement preventive actions such as improved health checks, monitoring, deployment validation, security gates, or automation.**
 
 **So overall, the pipeline follows a build-once, validate, secure, version, deploy, observe, and recover approach, with Git providing traceability throughout the software delivery lifecycle.”**
+
+
+Interview Questions:
+
+How Jenkins is connected to the AWS?
+**We configure AWS credentials in Jenkins Credentials, and on the AWS side those credentials have the required IAM permissions. Jenkins uses those credentials when executing AWS CLI commands, for example to authenticate with ECR and push the Docker image. In our GitOps setup, Argo CD handles the deployment to EKS, so Jenkins mainly needs AWS access for services such as ECR."
