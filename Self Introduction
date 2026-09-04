@@ -2,19 +2,21 @@ Hi, thank you for taking the time to interview me today.
 
 My name is Sai Charan Eedakula, and I have close to four years of experience in Site Reliability Engineering, DevOps automation, cloud infrastructure, and production support.
 
-Currently, I'm working at DXC Technology, supporting HPE's globally distributed e-commerce application. My primary responsibilities include supporting and optimizing AWS infrastructure across multiple production services, with a strong focus on high availability, reliability, security, and cost optimization.
+Currently, I'm working at DXC Technology, where I support HPE's globally distributed e-commerce application. My primary responsibilities involve managing and optimizing AWS infrastructure across multiple production services, with a strong focus on high availability, reliability, security, and cost optimization.
 
-I have strong hands-on experience in CI/CD automation. I've built and maintained end-to-end Jenkins pipelines covering the complete software delivery lifecycle, including code checkout, build, quality analysis, Docker image creation, and deployment to Amazon EKS using ArgoCD. This has helped reduce deployment time, minimize manual effort, and improve deployment consistency.
+From a technical perspective, my experience spans across cloud infrastructure, CI/CD automation, containerization, infrastructure automation, monitoring, and production operations. I primarily work with AWS, Kubernetes, Docker, Jenkins, ArgoCD, Ansible, Shell scripting, Prometheus, Grafana, New Relic, and OpenSearch.
 
-On the observability side, I work with Prometheus, Grafana, New Relic, and OpenSearch to build dashboards, configure alerts, and implement proactive health checks. This helps us identify issues early, troubleshoot production incidents faster, and reduce MTTR.
+One of my key areas of responsibility is CI/CD automation. I've built and maintained end-to-end Jenkins pipelines covering the complete software delivery lifecycle, including code checkout, build, quality analysis, Docker image creation, and deployment to Amazon EKS using ArgoCD. This has helped reduce deployment time, minimize manual effort, and improve deployment consistency.
 
-A significant part of my role involves production support and incident management. I troubleshoot application and infrastructure issues, perform root cause analysis, coordinate with developers, QA, operations, and business teams, and work toward restoring services with minimum business impact.
+Along with automation and deployments, I also focus heavily on observability and production reliability. I build monitoring dashboards, configure alerting policies, and implement proactive health checks using Prometheus, Grafana, New Relic, and OpenSearch. This helps us identify issues early, troubleshoot incidents faster, and reduce MTTR.
 
-I also work on operational automation and reporting, and participate in governance meetings where we review production health, incidents, performance trends, and optimization initiatives.
+Production support and incident management are also a significant part of my role. I actively participate in troubleshooting production issues, perform root cause analysis, and work closely with developers, QA, operations, and business stakeholders to restore services with minimum business impact.
 
-I'm particularly interested in this opportunity because the role aligns closely with my experience in production troubleshooting, CI/CD, automation, cloud operations, and reliability engineering. I'm looking forward to bringing my experience to the team while continuing to grow as an SRE and DevOps engineer.
+Overall, my approach is to not only resolve an operational issue, but also understand the root cause and look for opportunities to automate or improve the process so that the same issue doesn't happen again.
 
-That's a brief introduction about me. I'd be happy to explain any part of my experience in more detail.
+I'm particularly interested in this opportunity because it aligns closely with my experience in production troubleshooting, CI/CD, automation, cloud operations, and reliability engineering. I'm looking forward to contributing my experience while continuing to grow as an SRE and DevOps engineer.
+
+That's a brief introduction about me, and I'd be happy to discuss any part of my experience in more detail.
 
 
 Note:
