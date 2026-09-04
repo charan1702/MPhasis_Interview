@@ -1,0 +1,19 @@
+**“In my current environment, I have experience working with an end-to-end CI/CD pipeline for Java-based applications, where Jenkins is primarily used for CI and pipeline orchestration, and Argo CD is used for GitOps-based continuous delivery to Kubernetes/EKS.**
+
+**The flow starts when a developer commits and pushes code to Git, and after the required review and merge process, a webhook triggers Jenkins. Jenkins allocates an appropriate build agent and checks out the exact commit so that the build is traceable to a specific source version.**
+
+**The first major stage is the Maven build, where we compile the application, resolve dependencies, execute unit tests, and generate the application artifact. If compilation or unit testing fails, the pipeline stops and I investigate the Jenkins console logs, recent code changes, dependency versions, and build-agent environment.**
+
+**After a successful build, we run SonarQube analysis to check code quality, bugs, vulnerabilities, code smells, and coverage. The pipeline proceeds only if the configured quality gate passes. We also use OWASP Dependency Check to identify vulnerable application dependencies.**
+
+**Once the application passes these validations, the packaged artifact is stored in an artifact repository such as Nexus or JFrog. We then build the Docker image using the application artifact and scan the image using Trivy for OS-level and application-library vulnerabilities. Only images that satisfy the security policy are pushed to Amazon ECR.**
+
+**For deployment, we follow a GitOps approach. The Kubernetes deployment configuration, Helm values, or manifests are maintained in Git. The pipeline updates the required image version in the deployment configuration and commits the change to the GitOps repository. Argo CD continuously monitors that repository and compares the desired state in Git with the actual state in the EKS cluster. When it detects a valid change, it synchronizes the application to the cluster.**
+
+**Kubernetes then performs the deployment, normally using a rolling update. I validate the rollout by checking pod status, deployment status, readiness and liveness probes, application logs, and Kubernetes events. I also verify the Service, Ingress or ALB routing to make sure traffic is reaching the correct pods.**
+
+**After deployment, we monitor the application using Prometheus, Grafana, New Relic, and centralized logging such as ELK/OpenSearch. We monitor error rate, latency, CPU, memory, pod restarts, availability, and application-specific metrics.**
+
+**If a deployment causes production issues, my first priority is to assess impact and restore service. I correlate the issue with the deployment, isolate whether the problem is in the application, Kubernetes, infrastructure, networking, or dependency layer, and if necessary roll back to the last known-good version through the GitOps process. After recovery, I perform RCA and implement preventive actions such as improved health checks, monitoring, deployment validation, security gates, or automation.**
+
+**So overall, the pipeline follows a build-once, validate, secure, version, deploy, observe, and recover approach, with Git providing traceability throughout the software delivery lifecycle.”**
